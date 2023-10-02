@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fastfood
+    username: bigbob
+    password: bigmac
+  sql:
+    init:
+      platform: postgres
+springdoc:
+  packagesToScan: dev.elto
