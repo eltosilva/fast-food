@@ -1,0 +1,1 @@
+INSERT INTO dishs(name, description, price, is_in_menu) VALUES ('X-rato', 'pão, salsicha', 12.60, true);

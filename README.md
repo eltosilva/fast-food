@@ -1,10 +1,12 @@
 # Santander Bootcamp 2023 - Fullstack Java+Angular
 
-## Desáfio de Projeto
+Bootcamp da [DIO](https://www.dio.me/) em parceria com o [Banco Santander](https://www.santander.com.br/).
 
-Desenvolver uma API Rest usando Java e Spring Boot.
+## Descrição de Projeto
 
-Para o desáfio irei desenvolver uma API Rest para um restaurante de fast-food.
+Esse é um projeto de conclusão do módulo "Ganhando Produtividade com Spring Framework e Java".
+
+Para o desáfio escolhi desenvolver uma API Rest para um restaurante de fast-food, utilizando o framework Spring Boot.
 
 ## Modelo Entidade Relacionamento
 
