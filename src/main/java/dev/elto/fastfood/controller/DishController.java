@@ -2,6 +2,7 @@ package dev.elto.fastfood.controller;
 
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +39,8 @@ public class DishController {
   public ResponseEntity<DishDto> create(@RequestBody DishCreateDto dishCreate) {
 
     return ResponseEntity
-        .ok(dishService.create(dishCreate));
+        .status(HttpStatus.CREATED)
+        .body(dishService.create(dishCreate));
   }
 
   @DeleteMapping(path = "/:id")

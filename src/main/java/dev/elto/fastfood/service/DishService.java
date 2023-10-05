@@ -10,15 +10,13 @@ import dev.elto.fastfood.domain.dto.DishDto;
 import dev.elto.fastfood.domain.dto.DishUpdateDto;
 import dev.elto.fastfood.domain.model.Dish;
 import dev.elto.fastfood.domain.repository.DishRepository;
+import lombok.AllArgsConstructor;
 
 @Service
+@AllArgsConstructor
 public class DishService {
 
   private DishRepository dishRepository;
-
-  public DishService(DishRepository dish) {
-    dishRepository = dish;
-  }
 
   public DishDto create(DishCreateDto dishDto) {
 
@@ -28,7 +26,7 @@ public class DishService {
   }
 
   public List<DishDto> getAll() {
-    List<Dish> dishs = dishRepository.findAllByIsInMenu(Boolean.TRUE);
+    List<Dish> dishs = dishRepository.findAllByIsInMenuIsTrue();
 
     return dishs.stream()
         .map(dish -> new DishDto(dish))

@@ -10,7 +10,7 @@ import lombok.Setter;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 import dev.elto.fastfood.domain.dto.DishCreateDto;
-import dev.elto.fastfood.domain.dto.DishUpdateDto;;
+import dev.elto.fastfood.domain.dto.DishUpdateDto;
 
 @Entity(name = "dishs")
 @Getter
@@ -48,4 +48,5 @@ public class Dish {
       price = dishDto.getPrice();
 
   }
+
 }

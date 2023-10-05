@@ -51,7 +51,7 @@ public class TestDishService {
       }
     };
 
-    when(dishRepository.findAllByIsInMenu(true))
+    when(dishRepository.findAllByIsInMenuIsTrue())
         .thenReturn(dishsEntity);
     List<DishDto> dishsDto = dishService.getAll();
 

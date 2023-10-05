@@ -34,4 +34,9 @@ public class Item {
 
   @Column(nullable = false)
   private Integer account;
+
+  public Item(Order order, Dish dish) {
+    this.order = order;
+    this.dish = dish;
+  }
 }
